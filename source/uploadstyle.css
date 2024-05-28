@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /* Standard Reset for website styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/* General form styling */
+.form-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(64, 142, 198, 0.582);
+    border-radius: 5px;
+    width: 50%;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+.reqtopic,
+textarea {
+    width: 100%;
+    border: 2px solid #acacac;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+.submitbtn {
+    background-color: #eee;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+.submitbtn:hover {
+    background-color: #256aaa;
+}
+
+.picbtn {
+    background-color: #eee;
+    color: black;
+}
+
+.picbtn:hover {
+    background-color: #256aaa;
+}
+
+.logo {
+    width: 15%;
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /* Standard Reset for website styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+.change-bg {
+    /* Background change styles */
+    background-image: url("https://images.unsplash.com/photo-1655676763039-1175bbb62fe7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: changePhotos 20s infinite linear;
+}
+
+/* Container styles */
+.form-container {
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Animations */
+@keyframes changePhotos {
+    0% {
+        background-image: url("https://images.unsplash.com/photo-1655676763039-1175bbb62fe7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+
+    30% {
+        background-image: url("https://images.unsplash.com/photo-1712032076906-1cb8ba520b27?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+
+    60% {
+        background-image: url("https://images.unsplash.com/photo-1650920048537-e7be7f25cc8a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+
+    90% {
+        background-image: url("https://images.unsplash.com/photo-1711973340406-afb7acf55b1d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+
+    100% {
+        background-image: url("https://images.unsplash.com/photo-1655676763039-1175bbb62fe7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+}
+
+/* Logo Sizing */
+.logo {
+    width: 20%;
+}
+
+/* Form container styles with fixed width */
+.form-container form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 1);
+    background: #ffffffad;
+    width: 600px;
+}
+
+/* Form header styles */
+.form-container form h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Form Input styles */
+.form-container form input {
+    width: 100%;
+    font-size: 15px;
+    background: #ffffffad;
+}
+
+/* Form Button styles with transition on hover*/
+.form-container form .form-btn {
+    background: #00ACD4;
+    color: #eee;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+/* Form Button hover styles */
+.form-container form .form-btn:hover {
+    transition: ease;
+    background: #408EC6;
+    color: #fff;
+}
+
+/* Default Text styles */
+.form-container form p {
+    font-size: 15px;
+    color: #2e2e2e;
+}
+
+/* Anchor styles */
+.form-container form p a {
+    color: #408EC6;
+}
+
+/* Error message styles */
+.form-container form .errorTxt {
+    width: 50%;
+    display: block;
+    background: crimson;
+    color: #fff;
+    font-size: 15px;
+}
