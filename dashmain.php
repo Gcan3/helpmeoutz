@@ -106,7 +106,7 @@ if (!isset($_SESSION['user_name']) && !isset($_SESSION['google_loggedin'])) {
                         $req_email = $row['request_email'];
 
                         // Hide button if it's the user's own request
-                        $own_request = ($email == $req_email); 
+                        $own_request = ($email !== $req_email); 
             ?>
             <div class="card mt-3 mx-3">
                 <div class="row g-0">
@@ -123,6 +123,8 @@ if (!isset($_SESSION['user_name']) && !isset($_SESSION['google_loggedin'])) {
                             <!-- Display button if the posted request is not from the user to avoid confusion -->
                             <?php if ($own_request) : ?>
                                 <a href="mailto: <?php echo $req_email ?>" target="_blank" class="btn btn-primary">Take on Request</a>
+                            <?php endif; ?>
+                            <?php if (!$own_request) : ?>
                                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $req_id; ?>">
                                     Delete Request
                                 </button>
